@@ -1,0 +1,6 @@
+a = int(input("Enter your choice: "))
+b = float(input("Enter your choice: "))
+c = str(input("Enter your choice: "))
+print(type(a))
+print(type(b))
+print(type(c))
