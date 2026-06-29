@@ -1,0 +1,6 @@
+num = int(input("Enter a number: "))
+dec = float(input("Enter a decimal number: "))
+string = str(input("Enter a string: "))
+print(type(num))
+print(type(dec))
+print(type(string))
