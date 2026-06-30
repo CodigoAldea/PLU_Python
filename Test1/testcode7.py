@@ -1,0 +1,7 @@
+file = open("student.txt","w")
+file.write("programmer_yegnesh")
+file.close()
+file = open("student.txt","r")
+data = file.read()
+print(data)
+file.close()
