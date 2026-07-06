@@ -1,3 +1,8 @@
-for i in range(1, 21):
-    if i % 2 == 0:
-        print(i)
+from collections import deque
+queue_container = deque()
+queue_container.append(10)
+queue_container.append(20)
+queue_container.append(30)
+queue_container.append(40)
+removed_element = queue_container.popleft()
+print("Queue:", list(queue_container))

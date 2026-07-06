@@ -6,3 +6,4 @@ queue_container.append(30)
 queue_container.append(40)
 
 print("Queue:", list(queue_container))
+print("Front Element:", queue_container[0])
