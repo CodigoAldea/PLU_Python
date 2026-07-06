@@ -4,7 +4,7 @@ graph = {
     'C': ['A', 'D'],
     'D': ['B', 'C']
 }
-def has_edge(u, v):
+def edge(u, v):
     return v in graph.get(u, [])
-print(has_edge('A', 'B'))
-print(has_edge('A', 'D'))
+print(edge('A', 'B'))
+print(edge('A', 'D'))
