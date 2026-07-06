@@ -1,0 +1,6 @@
+val = int(input("Enter a value : "))
+dec = float(input("Enter a float : "))
+tex = input("Enter a text : ")
+print(type(val))
+print(type(dec))
+print(type(tex))

@@ -1,0 +1,44 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.ref = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def insert_start(self, data):
+        new_node = Node(data)
+        new_node.ref = self.head
+        self.head = new_node
+
+    def insert_after(self, target, data):
+        current = self.head
+
+        while current:
+            if current.data == target:
+                new_node = Node(data)
+                new_node.ref = current.ref
+                current.ref = new_node
+                return
+            current = current.ref
+
+        print("Node not found")
+
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" ")
+            current = current.ref
+
+a = LinkedList()
+
+a.insert_start(50)
+a.insert_start(40)
+a.insert_start(30)
+a.insert_start(20)
+a.insert_start(10)
+
+a.insert_after(20, 25)
+
+a.display()
