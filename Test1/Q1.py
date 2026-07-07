@@ -1,0 +1,6 @@
+integer_num = int(input("Enter a integer: "))
+print(integer_num)
+float_num = float(input("Enter a float: "))
+print(float_num)
+string = str(input("Enter a String: "))
+print(string)
