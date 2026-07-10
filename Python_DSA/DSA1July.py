@@ -45,8 +45,6 @@ class TreeStructure:
         self.root.right = self.node
         
     def move_to_next(self, node):
-        next_node = 0
         if node.left:
-            return next_node = node.left
-        else: 
-            return next_node = node.right
+            return node.left
+        return node.right
