@@ -1,0 +1,22 @@
+
+def find_roll(roll_list, target):
+    for i in range(len(roll_list)):
+        if roll_list[i] == target:
+            return i + 1          
+    return -1                     
+
+
+
+rolls = [105, 42, 88, 17, 63, 29, 74, 51, 96, 33]
+
+print("Registered Roll Numbers:", rolls)
+print()
+
+target = int(input("Enter roll number to search: "))
+
+position = find_roll(rolls, target)
+
+if position != -1:
+    print(f"Roll number {target} found at position {position}.")
+else:
+    print("Student not found.")
