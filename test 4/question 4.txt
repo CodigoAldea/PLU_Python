@@ -1,0 +1,32 @@
+question 4
+'''
+Create the following table.
+Customer
+| Column
+| Data Type
+|
+|------------ |------------ |
+| CustomerID | INT
+|
+| CustomerName | VARCHAR(100) |
+| City
+| VARCHAR(50) |
+| Mobile
+Tasks
+| VARCHAR(15) |
+1. Create the table.
+2. Make CustomerID the Primary Key.
+3. Explain why Primary Keys are important
+'''
+
+CREATE DATABASE company2;
+USE company2;
+CREATE TABLE Customer (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    City VARCHAR(50),
+    Mobile VARCHAR(15)
+);
+A Primary Key uniquely identifies each record in a table.
+It does not allow duplicate values.
+It does not allow NULL values.
