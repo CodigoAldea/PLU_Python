@@ -1,0 +1,12 @@
+CREATE TABLE Customer (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    City VARCHAR(50),
+    Mobile VARCHAR(15)
+);
+USE COMPANY;
+
+ALTER TABLE Customer
+ADD PRIMARY KEY (CustomerID);
+
+# primary keys are important because they ensure data integrity, facilitate relationships between tables, and optimize query performance. 
