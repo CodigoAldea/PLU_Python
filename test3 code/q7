@@ -1,0 +1,17 @@
+# creating table for employee and inserting dataCREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Department VARCHAR(50),
+    Salary INT
+);
+INSERT INTO Employee VALUES
+(1, 'Rahul', 'IT', 70000),
+(2, 'Priya', 'HR', 65000),
+(3, 'Aman', 'IT', 55000);
+
+1.Creating View HighSalaryEmployees
+
+CREATE VIEW HighSalaryEmployees AS
+SELECT *
+FROM Employee
+WHERE Salary > 60000;
