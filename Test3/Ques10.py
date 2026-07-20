@@ -11,8 +11,6 @@ marks = [56,78,90,45,66,89,70,81,55,60]
 
 n = len(marks)
 
-# Bubble Sort
-
 for i in range(n):
 
     for j in range(n-i-1):
