@@ -1,0 +1,17 @@
+# creating orders table and inserting data
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    OrderDate DATE,
+    Amount DECIMAL(10,2)
+);
+
+1.creating Index on orderID
+
+CREATE INDEX idx_OrderID
+ON Orders(OrderID);
+
+Benefit of an Index
+It improves the speed of data retrieval
+ (SELECT queries) by allowing the database to find rows faster.
