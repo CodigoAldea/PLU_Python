@@ -1,0 +1,26 @@
+Question 8
+'''
+Consider the following table.
+Orders
+| OrderID | CustomerName | OrderDate | Amount |
+|------- |------------ |--------- |------ |
+Tasks
+1. Create an index on OrderID.
+2. Explain one benefit of creating an index.
+'''
+
+USE company4;
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerName VARCHAR(100),
+    OrderDate DATE,
+    Amount INT
+);
+INSERT INTO Orders VALUES
+(101, 'Rahul', '2026-07-10', 5000),
+(102, 'Priya', '2026-07-11', 7500),
+(103, 'Aman', '2026-07-12', 3000);
+CREATE INDEX idx_OrderID
+ON Orders (OrderID);
+
+Benefit: An index speeds up data retrieval, so SELECT queries run faster, especially for large tables.

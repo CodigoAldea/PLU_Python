@@ -1,0 +1,36 @@
+Question 7
+'''
+Consider the following table.
+Employee
+| EmployeeID | Name | Department | Salary |
+|---------- |----- |---------- |------ |
+| 1
+| Rahul | IT
+| 2
+| 3
+| Priya | HR
+| Aman | IT
+| 65000 |
+| 45000 |
+| 70000 |
+Create a view named `HighSalaryEmployees` that displays employees earning
+more than ₹60,000
+'''
+
+CREATE DATABASE company4;
+USE company4;
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Department VARCHAR(50),
+    Salary INT
+);
+INSERT INTO Employee VALUES
+(1, 'Rahul', 'IT', 65000),
+(2, 'Priya', 'HR', 45000),
+(3, 'Aman', 'IT', 70000);
+CREATE VIEW HighSalaryEmployees AS
+SELECT *
+FROM Employee
+WHERE Salary > 60000;
+SELECT * FROM HighSalaryEmployees;
