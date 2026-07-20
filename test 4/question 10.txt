@@ -63,4 +63,5 @@ FROM Student
 INNER JOIN Course
 ON Student.CourseID = Course.CourseID
 WHERE Course.CourseName = 'Python';
+
 SELECT * FROM PythonStudents;
